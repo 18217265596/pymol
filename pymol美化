@@ -1,0 +1,37 @@
+cmd.bg_color("white")
+
+# 选择整个蛋白并设置显示模式为cartoon
+cmd.show("cartoon", "all")
+
+# 设置颜色为palecyan
+cmd.color("palecyan", "all")
+
+# 启用fancy helices
+cmd.set("cartoon_fancy_helices", 1)
+
+#手动调整颜色
+
+# 选择整个蛋白并设置显示模式为Surface
+cmd.show("surface", "all")
+
+# 设置透明度为80%
+cmd.set("transparency", 0.8, "all")
+
+# 设置光线效果为X-Ray效果，基于提供的参数，保存图像
+cmd.set("ambient", 1)
+cmd.set("reflect", -0.6)
+cmd.set("direct", -0.6)
+cmd.set("spec_direct", 0)
+cmd.set("spec_direct_power", 55)
+cmd.set("light_count", 2)
+cmd.set("spec_count", -1)
+cmd.set("shininess", 0)
+cmd.set("spec_reflect", -0.01)
+cmd.set("specular", 0)
+cmd.set("specular_intensity", 0)
+cmd.set("ambient_occlusion_mode", 0)
+cmd.set("ambient_occlusion_scale", 25)
+cmd.set("ambient_occlusion_smooth", 10)
+cmd.set("power", 1)
+cmd.set("reflect_power", 1)
+cmd.set("ray_opaque_background", 1)  # 取消透明背景
